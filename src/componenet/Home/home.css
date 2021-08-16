@@ -1,0 +1,70 @@
+.home-container {
+  gap: 1rem;
+}
+
+.home-content {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.home-social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+.home-social-icon {
+  font-size: 1.2rem;
+  color: var(--first-color);
+  transition: var(--transition);
+}
+.home-social-icon:hover {
+  color: var(--first-color-alt);
+}
+
+.home-blob {
+  width: 200px;
+  fill: var(--first-color);
+}
+.home-blob-img {
+  width: 170px;
+}
+
+.home-data {
+  grid-column: 1/3;
+}
+.home-title {
+  font-size: var(--big-font-size);
+}
+.home-subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-75);
+}
+.home-description {
+  margin-bottom: var(--mb-2);
+}
+
+.home-scroll {
+  display: none;
+}
+.home-scroll-btn {
+  color: var(--first-color);
+  transition: var(--transition);
+}
+.home-scroll-btn:hover {
+  transform: translateY(0.25rem);
+}
+.home-scroll-mouse {
+  font-size: 2rem;
+}
+.home-scroll-name {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+}
+.home-scroll-arrow {
+  font-size: 1.25rem;
+}
