@@ -55,45 +55,6 @@
   background-color: var(--first-color);
 }
 
-.skills-html {
-  width: 90%;
-}
-.skills-css {
-  width: 80%;
-}
-.skills-js {
-  width: 70%;
-}
-.skills-react {
-  width: 85%;
-}
-
-.skills-php {
-  width: 80%;
-}
-.skills-laravel {
-  width: 85%;
-}
-.skills-mysql {
-  width: 80%;
-}
-.skills-firebas {
-  width: 70%;
-}
-
-.skills-figma {
-  width: 90%;
-}
-.skills-sketch {
-  width: 85%;
-}
-.skills-xd {
-  width: 80%;
-}
-.skills-photoshop {
-  width: 85%;
-}
-
 .skills-open .skills-list {
   height: max-content;
   margin-bottom: var(--mb-2-5);

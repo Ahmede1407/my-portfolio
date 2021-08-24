@@ -1,10 +1,14 @@
 import React from "react";
 import { FiLinkedin, FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
-import { BiUserCircle } from "react-icons/bi";
 import { AiOutlineFileDone } from "react-icons/ai";
 import { RiGalleryLine } from "react-icons/ri";
-import { BiMessageSquareDetail, BiBriefcase, BiHome } from "react-icons/bi";
-import { FaSwatchbook } from "react-icons/fa";
+import {
+  BiMessageSquareDetail,
+  BiBriefcase,
+  BiHome,
+  BiUserCircle,
+} from "react-icons/bi";
+import { FaSwatchbook, FaGraduationCap } from "react-icons/fa";
 import { BsBraces, BsServer } from "react-icons/bs";
 
 // ================= NAVBAR LINKS =================
@@ -186,6 +190,73 @@ export const skills = [
         id: 4,
         name: "Adobe Photoshop",
         percentage: 85,
+      },
+    ],
+  },
+];
+
+// ================= Qualifications =================
+export const qualifications = [
+  {
+    id: 1,
+    icon: <FaGraduationCap className="qualification-icon" />,
+    title: "Education",
+    content: [
+      {
+        id: 1,
+        contentTitle: "Computer Science",
+        contentSubtitle: "Harvard University",
+        contentStartDate: 1998,
+        contentEndDate: 2003,
+      },
+      {
+        id: 2,
+        contentTitle: "Web Design",
+        contentSubtitle: "USA - Institute",
+        contentStartDate: 2004,
+        contentEndDate: 2007,
+      },
+      {
+        id: 3,
+        contentTitle: "Web Developer",
+        contentSubtitle: "Random place",
+        contentStartDate: 2007,
+        contentEndDate: 2015,
+      },
+      {
+        id: 4,
+        contentTitle: "Master UI / UX",
+        contentSubtitle: "Random place",
+        contentStartDate: 2016,
+        contentEndDate: 2020,
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: <BiBriefcase className="qualification-icon" />,
+    title: "Work",
+    content: [
+      {
+        id: 1,
+        contentTitle: "Software Engineer",
+        contentSubtitle: "Google",
+        contentStartDate: 2016,
+        contentEndDate: 2018,
+      },
+      {
+        id: 2,
+        contentTitle: "Front-End Developer",
+        contentSubtitle: "Upper",
+        contentStartDate: 2019,
+        contentEndDate: 2020,
+      },
+      {
+        id: 3,
+        contentTitle: "UI Designer",
+        contentSubtitle: "Figma",
+        contentStartDate: 2020,
+        contentEndDate: 2021,
       },
     ],
   },

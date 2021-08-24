@@ -8,7 +8,6 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import "./home.css";
 
 const Home = () => {
-  console.log(social);
   return (
     <section className="home section" id="home">
       <div className="home-container container grid">
