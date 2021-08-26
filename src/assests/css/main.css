@@ -153,6 +153,7 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   transition: var(--transition);
+  cursor: pointer;
 }
 .btn:hover {
   background-color: var(--first-color-alt);
@@ -160,6 +161,18 @@ img {
 .btn-flex {
   display: inline-flex;
   align-items: center;
+}
+.btn-small {
+  padding: 0.75rem 1rem !important;
+}
+.btn-link {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: var(--first-color) !important;
+}
+.btn-link:hover {
+  background-color: transparent !important;
+  color: var(--first-color-alt) !important;
 }
 
 .btn-icon {

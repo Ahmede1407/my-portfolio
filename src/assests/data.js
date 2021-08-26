@@ -9,7 +9,7 @@ import {
   BiUserCircle,
 } from "react-icons/bi";
 import { FaSwatchbook, FaGraduationCap } from "react-icons/fa";
-import { BsBraces, BsServer } from "react-icons/bs";
+import { BsBraces, BsServer, BsGrid1X2, BsPencilSquare } from "react-icons/bs";
 
 // ================= NAVBAR LINKS =================
 export const links = [
@@ -206,29 +206,29 @@ export const qualifications = [
         id: 1,
         contentTitle: "Computer Science",
         contentSubtitle: "Harvard University",
-        contentStartDate: 1998,
-        contentEndDate: 2003,
+        contentStartDate: "1998",
+        contentEndDate: "2003",
       },
       {
         id: 2,
         contentTitle: "Web Design",
         contentSubtitle: "USA - Institute",
-        contentStartDate: 2004,
-        contentEndDate: 2007,
+        contentStartDate: "2004",
+        contentEndDate: "2007",
       },
       {
         id: 3,
         contentTitle: "Web Developer",
         contentSubtitle: "Random place",
-        contentStartDate: 2007,
-        contentEndDate: 2015,
+        contentStartDate: "2007",
+        contentEndDate: "2015",
       },
       {
         id: 4,
         contentTitle: "Master UI / UX",
         contentSubtitle: "Random place",
-        contentStartDate: 2016,
-        contentEndDate: 2020,
+        contentStartDate: "2016",
+        contentEndDate: "2020",
       },
     ],
   },
@@ -241,22 +241,98 @@ export const qualifications = [
         id: 1,
         contentTitle: "Software Engineer",
         contentSubtitle: "Google",
-        contentStartDate: 2016,
-        contentEndDate: 2018,
+        contentStartDate: "2016",
+        contentEndDate: "2018",
       },
       {
         id: 2,
         contentTitle: "Front-End Developer",
         contentSubtitle: "Upper",
-        contentStartDate: 2019,
-        contentEndDate: 2020,
+        contentStartDate: "2019",
+        contentEndDate: "2020",
       },
       {
         id: 3,
         contentTitle: "UI Designer",
         contentSubtitle: "Figma",
-        contentStartDate: 2020,
-        contentEndDate: 2021,
+        contentStartDate: "2020",
+        contentEndDate: "Now",
+      },
+    ],
+  },
+];
+
+// ================= SERVICES =================
+export const services = [
+  {
+    id: 1,
+    icon: <BsGrid1X2 className="services-icon" />,
+    firstTitle: "UI / UX",
+    lastTitle: "Designer",
+    content: [
+      {
+        id: 1,
+        title: "I develop the user interface.",
+      },
+      {
+        id: 2,
+        title: "Web page development.",
+      },
+      {
+        id: 3,
+        title: "I create UX element interactions.",
+      },
+      {
+        id: 4,
+        title: "I position your company brand.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    icon: <BsBraces className="services-icon" />,
+    firstTitle: "Front-End",
+    lastTitle: "Developer",
+    content: [
+      {
+        id: 1,
+        title: "content for service_2 ",
+      },
+      {
+        id: 2,
+        title: "content for service_2 .",
+      },
+      {
+        id: 3,
+        title: "content for service_2 ",
+      },
+      {
+        id: 4,
+        title: "content for service_2 ",
+      },
+    ],
+  },
+  {
+    id: 3,
+    icon: <BsPencilSquare className="services-icon" />,
+    firstTitle: "Branding",
+    lastTitle: "Designer",
+    content: [
+      {
+        id: 1,
+        title: "content for service_3.",
+      },
+      {
+        id: 2,
+        title: "content for service_3.",
+      },
+      {
+        id: 3,
+        title: "content for service_3.",
+      },
+      {
+        id: 4,
+        title: "content for service_3.",
       },
     ],
   },

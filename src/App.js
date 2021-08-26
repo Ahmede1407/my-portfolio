@@ -4,6 +4,7 @@ import Home from "./componenet/Home/Home";
 import About from "./componenet/About/About";
 import Skills from "./componenet/Skills/Skills";
 import Qualification from "./componenet/Qualifications/Qualifications";
+import Services from "./componenet/Services/Services";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <About />
         <Skills />
         <Qualification />
+        <Services />
       </main>
     </div>
   );

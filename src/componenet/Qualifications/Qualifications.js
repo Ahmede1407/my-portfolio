@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BiCalendar } from "react-icons/bi";
 import "./qualification.css";
+import QualificationContent from "./QualificationContent";
 import { qualifications } from "../../assests/data";
 
 const Qualifications = () => {
@@ -33,61 +33,7 @@ const Qualifications = () => {
         </div>
 
         {/* Content Container */}
-        <div className="qualification-sections">
-          <div className="qualification-content">
-            {content.map((contentData) => {
-              const {
-                id,
-                contentTitle,
-                contentSubtitle,
-                contentStartDate,
-                contentEndDate,
-              } = contentData;
-              if (id % 2 === 0) {
-                return (
-                  <div key={id} className="qualification-data">
-                    <div></div>
-                    <div>
-                      <div className="qualification-rounder"></div>
-                      <div className="qualification-line"></div>
-                    </div>
-                    <div>
-                      <h3 className="qualification-title">{contentTitle}</h3>
-                      <span className="qualification-subtitle">
-                        {contentSubtitle}
-                      </span>
-
-                      <div className="qualification-calender">
-                        <BiCalendar />
-                        {contentStartDate} - {contentEndDate}
-                      </div>
-                    </div>
-                  </div>
-                );
-              }
-              return (
-                <div key={id} className="qualification-data">
-                  <div>
-                    <h3 className="qualification-title">{contentTitle}</h3>
-                    <span className="qualification-subtitle">
-                      {contentSubtitle}
-                    </span>
-
-                    <div className="qualification-calender">
-                      <BiCalendar />
-                      {contentStartDate} - {contentEndDate}
-                    </div>
-                  </div>
-
-                  <div>
-                    <div className="qualification-rounder"></div>
-                    <div className="qualification-line"></div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <QualificationContent content={content} />
       </div>
     </section>
   );
