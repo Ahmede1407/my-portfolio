@@ -2,7 +2,7 @@
   margin: 0 auto;
   margin: 3rem 0 5rem;
   width: 100%;
-  height: 400px;
+  height: 450px;
   max-width: 800px;
   text-align: center;
   position: relative;
@@ -13,12 +13,11 @@
   margin: 1rem;
   width: 85%;
   height: 100%;
-  object-fit: cover;
 }
 .prev,
 .next {
   position: absolute;
-  top: 200px;
+  top: 225px;
   transform: translateY(-50%);
   width: 2.25rem;
   height: 2.25rem;
@@ -71,4 +70,38 @@ figure.lastSlide {
 }
 figure.nextSlide {
   transform: translateX(100%);
+}
+
+/* * TESTIMONIALS  */
+.testimonial-icon-star {
+  color: #ffd700;
+}
+figure h4 {
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.person-img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid var(--first-color-lighter);
+  box-shadow: var(--dark-shadow);
+}
+.person-title {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: var(--clr-grey-3);
+}
+.person-text {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+}
+.person-icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: var(--first-color-lighter);
 }

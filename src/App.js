@@ -9,6 +9,7 @@ import Qualification from "./componenet/Qualifications/Qualifications";
 import Services from "./componenet/Services/Services";
 import Portfolio from "./componenet/Portfolio/Portfolio";
 import SingleProject from "./componenet/Portfolio/SingleProject";
+import TestimonialsSlider from "./componenet/Sliders/TestimonialsSlider";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         </Route>
         <Route path="/portfolio">
           <Portfolio />
+          <TestimonialsSlider />
         </Route>
         <Route path="/projects/:title" children={<SingleProject />}></Route>
         <Route path="*">{/* <Error /> */}</Route>
