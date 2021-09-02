@@ -23,6 +23,7 @@ const Services = () => {
   return (
     <section className="services section">
       <h2 className="section-title">Services</h2>
+      <div className="underline"></div>
       <span className="section-subtitle">What I can offer you !</span>
 
       <div className="services-container container grid">

@@ -15,7 +15,7 @@ import { BsBraces, BsServer, BsGrid1X2, BsPencilSquare } from "react-icons/bs";
 export const links = [
   {
     id: 1,
-    url: "/home",
+    url: "/",
     icon: <BiHome className="nav-icon" />,
     text: "Home",
   },
@@ -335,5 +335,99 @@ export const services = [
         title: "content for service_3.",
       },
     ],
+  },
+];
+
+// ================= PORTFOLIO PROJECTS =================
+export const portfolioProjects = [
+  {
+    id: 1,
+    category: "first category",
+    title: "first project",
+    img: require("./img/project_1/portfolio1.jpg").default,
+    info: {
+      technologiesUsed: ["html", "css", "javascript", "react.js"],
+      description:
+        "description for first category Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis aut voluptate debitis at dolorem iste animi ut iure.",
+      demo: "",
+      infoImages: [
+        { img: require("./img/project_1/img_2.jpg").default },
+        { img: require("./img/project_1/img_3.jpg").default },
+        { img: require("./img/project_1/img_4.jpg").default },
+        { img: require("./img/project_1/img_5.jpg").default },
+      ],
+    },
+  },
+  {
+    id: 2,
+    category: "second category",
+    title: "second project",
+    img: require("./img/project_2/portfolio2.jpg").default,
+    info: {
+      technologiesUsed: ["html", "css", "javascript", "react.js"],
+      description:
+        "description for second category Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis aut voluptate debitis at dolorem iste animi ut iure.",
+      demo: "",
+      infoImages: [
+        { img: require("./img/project_2/img_2.jpg").default },
+        { img: require("./img/project_2/img_3.jpg").default },
+        { img: require("./img/project_2/img_4.jpg").default },
+        { img: require("./img/project_2/img_5.jpg").default },
+      ],
+    },
+  },
+  {
+    id: 3,
+    category: "second category",
+    title: "third project",
+    img: require("./img/project_3/portfolio3.jpg").default,
+    info: {
+      technologiesUsed: ["html", "css", "javascript", "react.js"],
+      description:
+        "description for second category Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis aut voluptate debitis at dolorem iste animi ut iure.",
+      demo: "",
+      infoImages: [
+        { img: require("./img/project_3/img_2.jpg").default },
+        { img: require("./img/project_3/img_3.jpg").default },
+        { img: require("./img/project_3/img_4.jpg").default },
+        { img: require("./img/project_3/img_5.jpg").default },
+      ],
+    },
+  },
+  {
+    id: 4,
+    category: "third category",
+    title: "4th project",
+    img: require("./img/project_4/portfolio4.jpg").default,
+    info: {
+      technologiesUsed: ["html", "css", "javascript", "react.js"],
+      description:
+        "description for third category Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis aut voluptate debitis at dolorem iste animi ut iure.",
+      demo: "",
+      infoImages: [
+        { img: require("./img/project_4/img_2.jpg").default },
+        { img: require("./img/project_4/img_3.jpg").default },
+        { img: require("./img/project_4/img_4.jpg").default },
+        { img: require("./img/project_4/img_5.jpg").default },
+      ],
+    },
+  },
+  {
+    id: 5,
+    category: "third category",
+    title: "5th project",
+    img: require("./img/project_5/portfolio5.jpg").default,
+    info: {
+      technologiesUsed: ["html", "css", "javascript", "react.js"],
+      description:
+        "description for third category Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet blanditiis aut voluptate debitis at dolorem iste animi ut iure.",
+      demo: "",
+      infoImages: [
+        { img: require("./img/project_5/img_2.jpg").default },
+        { img: require("./img/project_5/img_3.jpg").default },
+        { img: require("./img/project_5/img_4.jpg").default },
+        { img: require("./img/project_5/img_5.jpg").default },
+      ],
+    },
   },
 ];

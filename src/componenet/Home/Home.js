@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { social } from "../../assests/data";
 import profilImg from "../../assests/img/perfil.png";
@@ -67,19 +68,19 @@ const Home = () => {
               High level experience in web design and development knowledge,
               producing quality work.
             </p>
-            <a href="/contact" className="btn btn-flex">
+            <Link to="/contact" className="btn btn-flex">
               Contact Me
               <IoSend className="btn-icon" />
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="home-scroll">
-          <a href="/about" className="home-scroll-btn btn-flex">
+          <Link to="/about" className="home-scroll-btn btn-flex">
             <BiMouse className="home-scroll-mouse" />
             <span className="home-scroll-name">Scroll Down</span>
             <AiOutlineArrowDown className="home-scroll-arrow" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

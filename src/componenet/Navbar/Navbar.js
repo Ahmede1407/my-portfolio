@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { FaTimesCircle } from "react-icons/fa";
 import { AiOutlineAppstore } from "react-icons/ai";
@@ -19,9 +20,9 @@ const Navbar = () => {
   return (
     <header className="header" id="header">
       <nav className="nav container">
-        <a href="/home" className="nav-logo">
+        <Link to="/" className="nav-logo">
           Ahmed
-        </a>
+        </Link>
 
         <div
           className={`${isMenuOpen ? "nav-menu show-menu" : "nav-menu"}`}
@@ -32,9 +33,9 @@ const Navbar = () => {
               const { id, url, icon, text } = link;
               return (
                 <li key={id} className="nav-item">
-                  <a href={url} className="nav-link" onClick={closeMenu}>
+                  <Link to={url} className="nav-link" onClick={closeMenu}>
                     {icon} {text}
-                  </a>
+                  </Link>
                 </li>
               );
             })}

@@ -11,6 +11,7 @@ const Qualifications = () => {
   return (
     <section className="qualification section">
       <h2 className="section-title">Qualification</h2>
+      <div className="underline"></div>
       <span className="section-subtitle">My Prsonal Journey</span>
 
       <div className="qualification-container container">

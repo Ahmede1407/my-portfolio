@@ -16,6 +16,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section-title">About Me</h2>
+      <div className="underline"></div>
       <span className="section-subtitle">My Introduction</span>
 
       <div className="about-container container grid">
