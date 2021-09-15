@@ -14,10 +14,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        `${process.env.REACT_APP_SERVICE_ID}`,
-        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        "service_rd8upvj",
+        "template_zwwx6dg",
         e.target,
-        `${process.env.REACT_APP_USER_ID}`
+        "user_Di8AfWVRIiEVc1yq0BcLS"
       )
       .then(
         (result) => {
