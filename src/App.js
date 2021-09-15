@@ -12,6 +12,7 @@ import SingleProject from "./componenet/Portfolio/SingleProject";
 import TestimonialsSlider from "./componenet/Sliders/TestimonialsSlider";
 import ContactMe from "./componenet/Contact/ContactMe";
 import Error from "./componenet/Error/Error";
+import Footer from "./componenet/Footer/Footer";
 
 const App = () => {
   return (
@@ -35,10 +36,6 @@ const App = () => {
           <Portfolio />
           <TestimonialsSlider />
         </Route>
-        <Route path="/portfolio">
-          <Portfolio />
-          <TestimonialsSlider />
-        </Route>
         <Route path="/contact">
           <ContactMe />
         </Route>
@@ -47,6 +44,7 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

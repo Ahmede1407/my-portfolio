@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <Link to="/" className="nav-logo">
-          Ahmed
+          Jane
         </Link>
 
         <div

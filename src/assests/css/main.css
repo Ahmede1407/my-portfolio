@@ -105,7 +105,8 @@ h4 {
 ul {
   list-style: none;
 }
-a {
+a,
+button {
   text-decoration: none;
 }
 img {
