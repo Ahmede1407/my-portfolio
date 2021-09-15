@@ -3,7 +3,9 @@
   padding-top: 2rem;
 }
 .footer-container {
-  row-gap: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-bg {
   background-color: var(--first-color-second);
@@ -26,7 +28,7 @@
 
 .footer-social {
   font-size: 1.25rem;
-  margin-right: var(--mb-1-5);
+  margin-left: var(--mb-1-5);
   transition: var(--transition);
 }
 .footer-social:hover {
@@ -37,5 +39,5 @@
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
-  margin-top: var(--mb-2);
+  margin-top: var(--mb-1-5);
 }
