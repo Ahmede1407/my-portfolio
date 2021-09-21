@@ -13,6 +13,7 @@ import TestimonialsSlider from "./componenet/Sliders/TestimonialsSlider";
 import ContactMe from "./componenet/Contact/ContactMe";
 import Error from "./componenet/Error/Error";
 import Footer from "./componenet/Footer/Footer";
+import ScrollTop from "./componenet/ScrollTop/ScrollTop";
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
         </Route>
       </Switch>
       <Footer />
+      <ScrollTop />
     </Router>
   );
 };
