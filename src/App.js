@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./componenet/Navbar/Navbar";
@@ -14,8 +14,20 @@ import ContactMe from "./componenet/Contact/ContactMe";
 import Error from "./componenet/Error/Error";
 import Footer from "./componenet/Footer/Footer";
 import ScrollTop from "./componenet/ScrollTop/ScrollTop";
+import Loader from "./componenet/Loader/Loader";
 
 const App = () => {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <Router>
       <Navbar />
@@ -45,8 +57,8 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
-      <Footer />
       <ScrollTop />
+      <Footer />
     </Router>
   );
 };

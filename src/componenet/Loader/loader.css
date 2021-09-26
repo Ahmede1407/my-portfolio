@@ -1,0 +1,72 @@
+/* * Loader */
+#loading {
+  background-color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 150px;
+  height: 150px;
+}
+.loader svg {
+  width: 90%;
+  fill: none;
+}
+.load {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 570;
+  stroke-width: 20px;
+}
+.load.one {
+  stroke: var(--first-color-alt);
+  animation: load 1.5s infinite;
+}
+.load.two {
+  stroke: var(--first-color);
+  animation: load 1.5s infinite;
+  animation-delay: 0.1s;
+}
+.load.three {
+  stroke: var(--first-color-lighter);
+  animation: load 1.5s infinite;
+  animation-delay: 0.2s;
+}
+.point {
+  animation: bounce 1s infinite ease-in-out;
+}
+.point.one {
+  fill: var(--first-color-lighter);
+  animation-delay: 0s;
+}
+.point.two {
+  fill: var(--first-color);
+  animation-delay: 0.1s;
+}
+.point.three {
+  fill: var(--first-color-alt);
+  animation-delay: 0.2s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 570;
+  }
+  50% {
+    stroke-dashoffset: 530;
+  }
+  100% {
+    stroke-dashoffset: 570;
+    transform: rotate(360deg);
+  }
+}
