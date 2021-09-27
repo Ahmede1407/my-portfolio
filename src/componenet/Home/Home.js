@@ -1,11 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { social, home, about } from "../../assests/data";
 
-import { social } from "../../assests/data";
-import profilImg from "../../assests/img/perfil.png";
 import { IoSend } from "react-icons/io5";
-import { BiMouse } from "react-icons/bi";
-import { AiOutlineArrowDown } from "react-icons/ai";
 import "./home.css";
 
 const Home = () => {
@@ -55,32 +52,23 @@ const Home = () => {
                   className="home-blob-img"
                   x="12"
                   y="18"
-                  href={profilImg}
+                  href={home.homeImg}
                 />
               </g>
             </svg>
           </div>
 
           <div className="home-data">
-            <h1 className="home-title">HI, I'm Jane Doe</h1>
-            <h3 className="home-subtitle">Front-End Developer</h3>
-            <p className="home-description">
-              High level experience in web design and development knowledge,
-              producing quality work.
-            </p>
+            <h1 className="home-title">
+              HI, I'm {about.fName} {about.lName}
+            </h1>
+            <h3 className="home-subtitle">{about.jobTitle}</h3>
+            <p className="home-description">{home.homeDesc}</p>
             <Link to="/contact" className="btn btn-flex">
               Contact Me
               <IoSend className="btn-icon" />
             </Link>
           </div>
-        </div>
-
-        <div className="home-scroll">
-          <Link to="/about" className="home-scroll-btn btn-flex">
-            <BiMouse className="home-scroll-mouse" />
-            <span className="home-scroll-name">Scroll Down</span>
-            <AiOutlineArrowDown className="home-scroll-arrow" />
-          </Link>
         </div>
       </div>
     </section>

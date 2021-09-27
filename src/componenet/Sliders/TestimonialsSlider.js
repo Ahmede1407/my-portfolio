@@ -28,7 +28,7 @@ const TestimonialsSlider = () => {
       <div className="testimonial-container container">
         <div className="slider">
           {reviews.map((review, reviewIndex) => {
-            const { id, title, image, name, rating, quote } = review;
+            const { id, title, image, name, quote } = review;
             let position = "nextSlide";
             if (reviewIndex === index) {
               position = "activeSlide";
@@ -57,37 +57,6 @@ const TestimonialsSlider = () => {
             <FiChevronRight className="next-icon" />
           </button>
         </div>
-        {/* {reviews.map((review) => {
-            return <h3>will fix it later</h3>;
-          })} */}
-        {/* <div className="testimonial-content">
-            <div className="testimonial-data">
-              <div className="testimonial-header">
-                <img
-                  src={testimonialImg}
-                  alt="testimonial img"
-                  className="testimonial-img"
-                />
-                <div>
-                  <h3 className="testimonial-name">Jane Doe</h3>
-                  <span className="testimonial-client">Client</span>
-                </div>
-              </div>
-
-              <div>
-                <AiFillStar className="testimonial-icon-star" />
-                <AiFillStar className="testimonial-icon-star" />
-                <AiFillStar className="testimonial-icon-star" />
-                <AiFillStar className="testimonial-icon-star" />
-                <AiFillStar className="testimonial-icon-star" />
-              </div>
-
-              <p className="testimonial-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
-                corporis aut mollitia esse odio
-              </p>
-            </div>
-          </div> */}
       </div>
     </section>
   );

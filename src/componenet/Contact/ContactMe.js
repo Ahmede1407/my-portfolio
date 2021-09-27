@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import "./ContactMe.css";
 import emailjs from "emailjs-com";
+import Modal from "./Modal";
+
+import "./ContactMe.css";
 
 import { BiPhone, BiEnvelopeOpen } from "react-icons/bi";
 import { FiMapPin } from "react-icons/fi";
 import { IoSend } from "react-icons/io5";
+
+import { contactInfo } from "../../assests/data";
+const { serviceID, templateID, userID } = contactInfo.emailJS;
+const { phone, email, location } = contactInfo.info;
 
 const ContactMe = () => {
   const [isMessageSent, setisMessageSent] = useState(false);
@@ -12,24 +18,17 @@ const ContactMe = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_rd8upvj",
-        "template_zwwx6dg",
-        e.target,
-        "user_Di8AfWVRIiEVc1yq0BcLS"
-      )
-      .then(
-        (result) => {
-          setisMessageSent(true);
-          setTimeout(() => {
-            setisMessageSent(false);
-          }, 2500);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+      (result) => {
+        setisMessageSent(true);
+        setTimeout(() => {
+          setisMessageSent(false);
+        }, 2500);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     e.target.reset();
   }
 
@@ -45,21 +44,21 @@ const ContactMe = () => {
             <BiPhone className="contact-icon" />
             <div>
               <h3 className="contact-title">call me</h3>
-              <span className="contact-subtitle">+02 123-456-789</span>
+              <span className="contact-subtitle">{phone}</span>
             </div>
           </div>
           <div className="contact-info">
             <BiEnvelopeOpen className="contact-icon" />
             <div>
               <h3 className="contact-title">Email</h3>
-              <span className="contact-subtitle">test@gmail.com</span>
+              <span className="contact-subtitle">{email}</span>
             </div>
           </div>
           <div className="contact-info">
             <FiMapPin className="contact-icon" />
             <div>
               <h3 className="contact-title">Location</h3>
-              <span className="contact-subtitle">Egypt - Alexandria</span>
+              <span className="contact-subtitle">{location}</span>
             </div>
           </div>
         </div>
@@ -71,13 +70,7 @@ const ContactMe = () => {
                 isMessageSent ? "modal-overlay show-modal" : "modal-overlay"
               }`}
             >
-              <div className="modal-container">
-                <h3>
-                  Thank you for your time! <span>🎉😊</span>
-                </h3>
-
-                <span>We will reply to your message as soon as possible</span>
-              </div>
+              <Modal />
             </div>
             <div className="contact-content">
               <label htmlFor="name" className="contact-label">

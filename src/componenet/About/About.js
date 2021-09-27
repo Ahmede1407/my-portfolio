@@ -1,7 +1,7 @@
 import React from "react";
 
-import aboutImg from "../../assests/img/about.jpg";
-import cv from "../../assests/pdf/C.V.pdf";
+// import aboutImg from "../../assests/img/about.jpg";
+// import cv from "../../assests/pdf/C.V.pdf";
 
 import { about } from "../../assests/data";
 
@@ -10,8 +10,10 @@ import { BiDownload } from "react-icons/bi";
 import "./about.css";
 
 const About = () => {
-  let aboutDescription = about.description;
-  let aboutInfo = about.info;
+  const aboutDescription = about.description;
+  const aboutInfo = about.info;
+  const aboutImg = about.img;
+  const aboutCV = about.cv;
 
   return (
     <section className="about section" id="about">
@@ -40,7 +42,7 @@ const About = () => {
           </div>
 
           <div className="about-btns">
-            <a download="" href={cv} className="btn btn-flex">
+            <a download="" href={aboutCV} className="btn btn-flex">
               Download CV <BiDownload className="btn-icon" />
             </a>
           </div>

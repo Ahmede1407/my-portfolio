@@ -75,10 +75,22 @@ export const social = [
   //   },
 ];
 
+// ================= HOME INFO =================
+export const home = {
+  homeImg: require("./img/perfil.png").default,
+  homeDesc:
+    "High level experience in web design and development knowledge, producing quality work.",
+};
+
 // ================= ABOUT INFO =================
 export const about = {
+  fName: "Jane",
+  lName: "Doe",
+  jobTitle: "Front-End Developer",
   description:
     "Web developer, with extensive knowledge and much experience, working in web technologies and Ui / Ux design, delivering quality work.",
+  img: require("./img/about.jpg").default,
+  cv: require("./pdf/C.V.pdf").default,
   info: [
     {
       id: 1,
@@ -459,3 +471,16 @@ export const reviews = [
       "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
   },
 ];
+
+export const contactInfo = {
+  emailJS: {
+    serviceID: "service_rd8upvj",
+    templateID: "template_zwwx6dg",
+    userID: "user_Di8AfWVRIiEVc1yq0BcLS",
+  },
+  info: {
+    phone: "+02 123-456-789",
+    email: "test@gmail.com",
+    location: "Egypt - Alexandria",
+  },
+};

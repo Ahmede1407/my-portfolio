@@ -1,7 +1,10 @@
 import React from "react";
 import "./footer.css";
 
-import { social } from "../../assests/data";
+import { social, about } from "../../assests/data";
+
+let date = new Date();
+let year = date.getFullYear();
 
 const Footer = () => {
   return (
@@ -9,8 +12,10 @@ const Footer = () => {
       <div className="footer-bg">
         <div className="footer-container container ">
           <div>
-            <h1 className="footer-title">Jane Doe</h1>
-            <span className="footer-subtitle">Front-End Developer</span>
+            <h1 className="footer-title">
+              {about.fName} {about.lName}
+            </h1>
+            <span className="footer-subtitle">{about.jobTitle}</span>
           </div>
 
           <div className="footer-socials">
@@ -31,7 +36,7 @@ const Footer = () => {
         </div>
 
         <p className="footer-copy-right">
-          &#169; Jane. All copy right reserved
+          &#169; {about.fName}. All copy right reserved {year}.
         </p>
       </div>
     </footer>

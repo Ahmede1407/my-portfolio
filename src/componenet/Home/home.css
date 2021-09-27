@@ -45,26 +45,3 @@
 .home-description {
   margin-bottom: var(--mb-2);
 }
-
-.home-scroll {
-  display: none;
-}
-.home-scroll-btn {
-  color: var(--first-color);
-  transition: var(--transition);
-}
-.home-scroll-btn:hover {
-  transform: translateY(0.25rem);
-}
-.home-scroll-mouse {
-  font-size: 2rem;
-}
-.home-scroll-name {
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  margin-right: var(--mb-0-25);
-}
-.home-scroll-arrow {
-  font-size: 1.25rem;
-}
