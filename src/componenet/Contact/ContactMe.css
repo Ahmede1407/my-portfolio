@@ -83,3 +83,10 @@
   color: var(--first-color);
   cursor: pointer;
 }
+
+/* * For Medium Sizes */
+@media screen and (min-width: 568px) {
+  .contact-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

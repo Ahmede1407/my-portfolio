@@ -11,3 +11,10 @@
 .change-theme:hover {
   color: var(--first-color);
 }
+
+/* * For Medium Sizes */
+@media screen and (min-width: 768px) {
+  .change-theme {
+    margin: 0;
+  }
+}

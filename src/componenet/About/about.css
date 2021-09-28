@@ -3,6 +3,7 @@
   border-radius: 0.5rem;
   justify-self: center;
   align-items: center;
+  margin: auto;
 }
 .about-description {
   text-align: center;
@@ -29,4 +30,30 @@
 .about-btns {
   display: flex;
   justify-content: center;
+}
+
+/*==================== MEDIA QUIRIES ====================*/
+/* * For Medium Sizes */
+@media screen and (min-width: 568px) {
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* * For Medium Sizes */
+@media screen and (min-width: 768px) {
+  .about-container {
+    column-gap: 5rem;
+  }
+  .about-img {
+    width: 350px;
+  }
+  .about-description {
+    text-align: initial;
+  }
+  .about-info {
+    justify-content: space-between;
+  }
+  .about-btns {
+    justify-content: initial;
+  }
 }

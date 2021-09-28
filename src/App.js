@@ -31,33 +31,35 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/skills">
-          <Skills />
-          <Qualification />
-        </Route>
-        <Route path="/services">
-          <Services />
-        </Route>
-        <Route path="/portfolio">
-          <Portfolio />
-          <TestimonialsSlider />
-        </Route>
-        <Route path="/contact">
-          <ContactMe />
-        </Route>
-        <Route path="/projects/:title" children={<SingleProject />}></Route>
-        <Route path="*">
-          <Error />
-        </Route>
-      </Switch>
-      <ScrollTop />
+      <main className="main">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/skills">
+            <Skills />
+            <Qualification />
+          </Route>
+          <Route path="/services">
+            <Services />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio />
+            <TestimonialsSlider />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+          <Route path="/projects/:title" children={<SingleProject />}></Route>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+        <ScrollTop />
+      </main>
       <Footer />
     </Router>
   );

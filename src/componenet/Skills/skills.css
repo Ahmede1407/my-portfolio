@@ -67,3 +67,17 @@
   height: 0;
   overflow: hidden;
 }
+
+/*==================== MEDIA QUIRIES ====================*/
+/* * For Small Sizes */
+@media screen and (max-width: 350px) {
+  .skills-title {
+    font-size: var(--normal-font-size);
+  }
+}
+/* * For Medium Sizes */
+@media screen and (min-width: 568px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

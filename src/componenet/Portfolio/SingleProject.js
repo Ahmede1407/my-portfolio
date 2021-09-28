@@ -45,7 +45,7 @@ const SingleProject = () => {
           {technologiesUsed.map((name, index) => {
             return (
               <span key={index} className="technology-name">
-                <h4>{name}</h4>
+                <p>{name}</p>
               </span>
             );
           })}

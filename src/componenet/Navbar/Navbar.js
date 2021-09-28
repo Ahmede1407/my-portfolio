@@ -7,11 +7,12 @@ import { AiOutlineAppstore } from "react-icons/ai";
 import ToggleThemes from "../ToggleThemes/ToggleThemes";
 
 import "./Navbar.css";
-import { links, about } from "../../assests/data";
+import { links } from "../../assests/data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [headerShadow, setHeaderShadow] = useState(false);
+  const [value, setValue] = useState(0);
 
   const [y, setY] = useState(window.scrollY);
 
@@ -49,7 +50,7 @@ const Navbar = () => {
     <header className={`header ${headerShadow && "header-shadow"}`} id="header">
       <nav className="nav container">
         <Link to="/" className="nav-logo">
-          {about.fName}
+          Jane
         </Link>
 
         <div
@@ -57,11 +58,18 @@ const Navbar = () => {
           id="nav-menu"
         >
           <ul className="nav-list grid" id="nav-list">
-            {links.map((link) => {
+            {links.map((link, index) => {
               const { id, url, icon, text } = link;
               return (
                 <li key={id} className="nav-item">
-                  <Link to={url} className="nav-link" onClick={closeMenu}>
+                  <Link
+                    to={url}
+                    onClick={() => {
+                      closeMenu();
+                      setValue(index);
+                    }}
+                    className={`nav-link ${index === value && "active"}`}
+                  >
                     {icon} {text}
                   </Link>
                 </li>

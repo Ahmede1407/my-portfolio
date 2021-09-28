@@ -220,3 +220,39 @@ img {
   margin-left: var(--mb-0-5);
   transition: var(--transition);
 }
+
+/*==================== MEDIA QUIRIES ====================*/
+/* * For Small Sizes */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+/* * For Medium Sizes */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    padding: 0 1rem;
+  }
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section-subtitle {
+    margin-bottom: 4rem;
+  }
+}
+
+/* * For Large Sizes */
+@media screen and (min-width: 1024px) {
+  .main {
+    padding: 0;
+  }
+}

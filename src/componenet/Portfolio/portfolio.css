@@ -5,7 +5,9 @@
 .categories-btn-container {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+  width: 100%;
 }
 .categories-btn {
   font-size: var(--normal-font-size);
@@ -13,13 +15,20 @@
   cursor: pointer;
   transition: var(--transition);
   text-transform: capitalize;
+  margin-right: 0.5rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  display: inline-block;
+  padding: auto;
 }
-.categories-btn:hover,
+.categories-btn:hover {
+  background-color: var(--first-color-lighter);
+  color: var(--container-color);
+}
 .categories-btn.active {
   background-color: var(--first-color);
   color: var(--container-color);
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem;
 }
 
 .portfolio-content {
@@ -81,11 +90,12 @@
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
-.technology-name h4 {
+.technology-name p {
   text-transform: uppercase;
   color: var(--body-color);
   background: var(--first-color);
   display: inline-block;
+  font-size: 1rem;
   margin-right: var(--mb-1);
   padding: 0.375rem 0.75rem;
   border-radius: 0.5rem;
@@ -93,9 +103,34 @@
   transition: var(--transition);
   margin-bottom: var(--mb-3);
 }
-.technology-name h4:hover {
+.technology-name p:hover {
   background-color: var(--first-color-alt);
 }
 .demo-btn {
-  padding: 1rem 0;
+  padding: 1rem 0 !important;
+}
+
+/*==================== MEDIA QUIRIES ====================*/
+/* * For Small Sizes */
+@media screen and (max-width: 350px) {
+  .portfolio-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 0.5rem;
+  }
+  .portfolio-data {
+    padding: 1rem 0.5rem;
+  }
+
+  .categories-btn {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+  .technology-name p {
+    margin-right: var(--mb-0-5);
+    padding: 0.25rem 0.5rem;
+    margin-bottom: var(--mb-1);
+  }
 }

@@ -50,10 +50,16 @@ const TestimonialsSlider = () => {
               </figure>
             );
           })}
-          <button className="prev" onClick={() => setIndex(index - 1)}>
+          <button
+            className="testimonials-prev prev"
+            onClick={() => setIndex(index - 1)}
+          >
             <FiChevronLeft className="prev-icon" />
           </button>
-          <button className="next" onClick={() => setIndex(index + 1)}>
+          <button
+            className="testimonials-next next"
+            onClick={() => setIndex(index + 1)}
+          >
             <FiChevronRight className="next-icon" />
           </button>
         </div>

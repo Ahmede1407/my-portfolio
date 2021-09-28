@@ -41,3 +41,16 @@
   color: var(--text-color-light);
   margin-top: var(--mb-1-5);
 }
+
+/* * For Medium Sizes */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+/* * For Large Sizes */
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    padding: 0;
+  }
+}

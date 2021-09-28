@@ -16,7 +16,7 @@ const ProjectSlider = ({ images }) => {
   }, [index]);
 
   return (
-    <div className="slider">
+    <div className="slider project-slider">
       {images.map((img, imgIndex) => {
         let position = "nextSlide";
         if (imgIndex === index) {
@@ -35,10 +35,16 @@ const ProjectSlider = ({ images }) => {
           </figure>
         );
       })}
-      <button className="prev" onClick={() => setIndex(index - 1)}>
+      <button
+        className="project-slider-prev prev"
+        onClick={() => setIndex(index - 1)}
+      >
         <FiChevronLeft className="prev-icon" />
       </button>
-      <button className="next" onClick={() => setIndex(index + 1)}>
+      <button
+        className="project-slider-next next"
+        onClick={() => setIndex(index + 1)}
+      >
         <FiChevronRight className="next-icon" />
       </button>
     </div>

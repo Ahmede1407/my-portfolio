@@ -52,3 +52,31 @@
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
+
+/*==================== MEDIA QUIRIES ====================*/
+/* * For Small Sizes */
+@media screen and (max-width: 350px) {
+  .qualification-data {
+    gap: 0.5rem;
+  }
+}
+/* * For Medium Sizes */
+@media screen and (min-width: 568px) {
+  .qualification-sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+}
+/* * For Medium Sizes */
+@media screen and (min-width: 768px) {
+  .qualification-sections {
+    grid-template-columns: 0.5fr;
+  }
+  .qualification-tabs {
+    justify-content: center;
+  }
+  .qualification-btn {
+    margin: 0 var(--mb-1);
+  }
+}
