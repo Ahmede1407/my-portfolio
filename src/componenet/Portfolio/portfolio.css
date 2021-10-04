@@ -112,7 +112,7 @@
 
 /*==================== MEDIA QUIRIES ====================*/
 /* * For Small Sizes */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 300px) and (max-width: 380px) {
   .portfolio-content {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 0.5rem;

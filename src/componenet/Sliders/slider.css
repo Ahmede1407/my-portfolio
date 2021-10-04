@@ -19,8 +19,8 @@
   position: absolute;
   top: 225px;
   transform: translateY(-50%);
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: grid;
   place-items: center;
   font-size: 2.5rem;
@@ -105,7 +105,7 @@ figure h4 {
 
 /*==================== MEDIA QUIRIES ====================*/
 /* * For Small Sizes */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 300px) and (max-width: 426px) {
   .slider {
     margin: 2rem 0;
   }
@@ -141,7 +141,7 @@ figure h4 {
 }
 
 /* * For Medium Sizes */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 568px) and (max-width: 768px) {
   .slider {
     margin: 3rem 0;
   }
@@ -156,9 +156,9 @@ figure h4 {
   .prev,
   .next {
     top: 185px;
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
+    font-size: 2rem;
+    width: 2.1rem;
+    height: 2.1rem;
   }
   .person-img {
     width: 150px;
@@ -176,11 +176,11 @@ figure h4 {
   }
 }
 /* * For Medium Sizes */
-@media screen and (min-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .prev,
   .next {
     font-size: 2rem;
     width: 2.1rem;
     height: 2.1rem;
   }
-}
+} */
