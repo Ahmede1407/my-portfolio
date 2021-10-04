@@ -22,15 +22,16 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
-.nav-logo:hover {
-  color: var(--first-color);
-}
+
 .nav-toggle {
   font-size: 1.25rem;
   cursor: pointer;
 }
 .nav-toggle:hover {
   color: var(--first-color);
+}
+.nav-menu {
+  z-index: 2;
 }
 @media screen and (max-width: 767px) {
   .nav-menu {

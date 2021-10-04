@@ -7,7 +7,7 @@ import { AiOutlineAppstore } from "react-icons/ai";
 import ToggleThemes from "../ToggleThemes/ToggleThemes";
 
 import "./Navbar.css";
-import { links } from "../../assests/data";
+import { links, about } from "../../assests/data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,9 +49,7 @@ const Navbar = () => {
   return (
     <header className={`header ${headerShadow && "header-shadow"}`} id="header">
       <nav className="nav container">
-        <Link to="/" className="nav-logo">
-          Jane
-        </Link>
+        <div className="nav-logo">{about.fName}</div>
 
         <div
           className={`${isMenuOpen ? "nav-menu show-menu" : "nav-menu"}`}

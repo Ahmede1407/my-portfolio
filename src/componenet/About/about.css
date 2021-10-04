@@ -35,6 +35,9 @@
 /*==================== MEDIA QUIRIES ====================*/
 /* * For Medium Sizes */
 @media screen and (min-width: 568px) {
+  .about {
+    height: 100vh;
+  }
   .about-container {
     grid-template-columns: repeat(2, 1fr);
   }

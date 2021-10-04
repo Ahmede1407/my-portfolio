@@ -79,7 +79,7 @@ export const social = [
 export const home = {
   homeImg: require("./img/perfil.png").default,
   homeDesc:
-    "High level experience in web design and development knowledge, producing quality work.",
+    "High-level experience in web design and development knowledge, producing quality work.",
 };
 
 // ================= ABOUT INFO =================

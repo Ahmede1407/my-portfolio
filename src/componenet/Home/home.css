@@ -59,6 +59,9 @@
 
 /* * For Medium Sizes */
 @media screen and (min-width: 568px) {
+  .home {
+    height: 100vh;
+  }
   .home-content {
     grid-template-columns: max-content 1fr 1fr;
   }

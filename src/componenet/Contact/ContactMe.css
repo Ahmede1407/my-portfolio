@@ -1,4 +1,7 @@
 /* * CONTACT ME  */
+.contact {
+  margin-bottom: 5rem;
+}
 .contact-container {
   row-gap: 3rem;
 }
@@ -86,6 +89,9 @@
 
 /* * For Medium Sizes */
 @media screen and (min-width: 568px) {
+  .contact {
+    margin-bottom: 0;
+  }
   .contact-container {
     grid-template-columns: repeat(2, 1fr);
   }

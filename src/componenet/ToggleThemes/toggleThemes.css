@@ -7,6 +7,7 @@
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
+  z-index: 1;
 }
 .change-theme:hover {
   color: var(--first-color);
