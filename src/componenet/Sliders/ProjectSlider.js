@@ -13,7 +13,7 @@ const ProjectSlider = ({ images }) => {
     if (index > lastIndex) {
       setIndex(0);
     }
-  }, [index]);
+  }, [index, images.length]);
 
   return (
     <div className="slider project-slider">
