@@ -16,16 +16,19 @@ const Navbar = () => {
 
   const [y, setY] = useState(window.scrollY);
 
-  const handleNavigation = useCallback((e) => {
-    const window = e.currentTarget;
-    if (window.scrollY <= 80) {
-      setHeaderShadow(false);
-    }
-    if (window.scrollY >= 80) {
-      setHeaderShadow(true);
-    }
-    setY(window.scrollY);
-  }, []);
+  const handleNavigation = useCallback(
+    (e) => {
+      const window = e.currentTarget;
+      if (y <= 80) {
+        setHeaderShadow(false);
+      }
+      if (y >= 80) {
+        setHeaderShadow(true);
+      }
+      setY(window.scrollY);
+    },
+    [y]
+  );
 
   useEffect(() => {
     setY(window.scrollY);

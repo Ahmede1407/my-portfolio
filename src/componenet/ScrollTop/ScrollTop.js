@@ -7,16 +7,19 @@ const ScrollTop = () => {
 
   const [y, setY] = useState(window.scrollY);
 
-  const handleNavigation = useCallback((e) => {
-    const window = e.currentTarget;
-    if (window.scrollY <= 400) {
-      setScrollTopArrow(false);
-    }
-    if (window.scrollY >= 400) {
-      setScrollTopArrow(true);
-    }
-    setY(window.scrollY);
-  }, []);
+  const handleNavigation = useCallback(
+    (e) => {
+      const window = e.currentTarget;
+      if (y <= 400) {
+        setScrollTopArrow(false);
+      }
+      if (y >= 400) {
+        setScrollTopArrow(true);
+      }
+      setY(window.scrollY);
+    },
+    [y]
+  );
 
   useEffect(() => {
     setY(window.scrollY);
