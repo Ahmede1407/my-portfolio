@@ -26,6 +26,7 @@ const Footer = () => {
                   key={id}
                   href={url}
                   target="_blank"
+                  rel="noreferrer"
                   className="footer-social"
                 >
                   {icon}

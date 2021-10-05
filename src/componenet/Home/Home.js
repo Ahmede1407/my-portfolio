@@ -19,6 +19,7 @@ const Home = () => {
                   href={url}
                   target="_blank"
                   className="home-social-icon"
+                  rel="noreferrer"
                 >
                   {icon}
                 </a>
@@ -31,7 +32,7 @@ const Home = () => {
               className="home-blob"
               viewBox="0 0 200 187"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns="http://www.w3.org/1999/xlink"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
               <mask id="mask0" mask-type="alpha">
                 <path

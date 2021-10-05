@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Projects from "./Projects";
-import Catefories from "./Categories";
+import Categories from "./Categories";
 import { portfolioProjects } from "../../assests/data";
 
 import "./portfolio.css";
@@ -10,7 +10,6 @@ const Portfolio = () => {
   const uniqueCategories = ["All", ...new Set(allCategories)];
 
   const [projects, setProjects] = useState(portfolioProjects);
-  const [categories, setCategories] = useState(uniqueCategories);
 
   const filterProjects = (category) => {
     if (category === "All") {
@@ -30,7 +29,10 @@ const Portfolio = () => {
       <span className="section-subtitle">My last work</span>
 
       <div className="portfolio-container container">
-        <Catefories filterProjects={filterProjects} categories={categories} />
+        <Categories
+          filterProjects={filterProjects}
+          categories={uniqueCategories}
+        />
         <Projects projects={projects} />
       </div>
     </section>

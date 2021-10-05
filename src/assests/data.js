@@ -1,5 +1,5 @@
 import React from "react";
-import { FiLinkedin, FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
 import { AiOutlineFileDone } from "react-icons/ai";
 import { RiGalleryLine } from "react-icons/ri";
 import {

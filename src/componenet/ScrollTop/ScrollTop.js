@@ -7,19 +7,16 @@ const ScrollTop = () => {
 
   const [y, setY] = useState(window.scrollY);
 
-  const handleNavigation = useCallback(
-    (e) => {
-      const window = e.currentTarget;
-      if (window.scrollY <= 400) {
-        setScrollTopArrow(false);
-      }
-      if (window.scrollY >= 400) {
-        setScrollTopArrow(true);
-      }
-      setY(window.scrollY);
-    },
-    [y]
-  );
+  const handleNavigation = useCallback((e) => {
+    const window = e.currentTarget;
+    if (window.scrollY <= 400) {
+      setScrollTopArrow(false);
+    }
+    if (window.scrollY >= 400) {
+      setScrollTopArrow(true);
+    }
+    setY(window.scrollY);
+  }, []);
 
   useEffect(() => {
     setY(window.scrollY);
@@ -30,9 +27,13 @@ const ScrollTop = () => {
     };
   }, [handleNavigation]);
 
+  const toTop = "#";
   return (
     <div>
-      <a href="#" className={`scroll-top ${scrollTopArrow && "show-arrow"}`}>
+      <a
+        href={toTop}
+        className={`scroll-top ${scrollTopArrow && "show-arrow"}`}
+      >
         <TiArrowUpThick className="scroll-top-icon" />
       </a>
     </div>

@@ -23,7 +23,7 @@ const SingleProject = () => {
     setDescription(newProject.info.description);
     setDemo(newProject.info.demo);
     setImages(newProject.info.infoImages);
-  }, []);
+  }, [title]);
 
   return (
     <div className="single-project-section section">
